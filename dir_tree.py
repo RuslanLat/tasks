@@ -62,7 +62,4 @@ def dfs_tree(path):
 if __name__ == "__main__":
     parser = createParser()
     namespace = parser.parse_args(sys.argv[1:])
-    if namespace.path:
-        print(dfs_tree(namespace.path))
-    elif namespace.help:
-        print("Это help")
+    print(dfs_tree(namespace.path))
